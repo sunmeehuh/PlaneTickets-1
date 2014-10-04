@@ -1,0 +1,83 @@
+{
+	"SearchRequest": {
+		"User": "sunmee725+1@gmail.com",
+		"Password": "july2525",
+		"ResponseType": "json",
+		"PassengerTypes": [
+		{
+			"TypeId": 1,
+			"PaxType": "Adult"
+		}
+		],
+		"TripSegments": [
+		{
+			"Id": 1,
+			"SegmentPassengers": {
+				"PassengerGroups": [
+				{
+					"Members": [
+					{
+						"Id": 1,
+						"TypeId": 1,
+						"Cabin": "Any"
+					}
+					]
+				}
+				] 
+				},
+				"Origin": [
+				"JFK"
+				],
+				"Destination": [
+				"IAD"
+				],
+				"DepartureDates": [
+				{
+					"Date": "2014-09-15"
+				}
+				]
+				},
+				{
+					"Id": 2,
+					"SegmentPassengers": {
+						"PassengerGroups": [
+						{
+							"Members": [
+							{
+								"Id": 1,
+								"TypeId": 1,
+								"Cabin": "Any"
+							}
+							]
+						}
+						] 
+						},
+						"Origin": [
+						"IAD"
+						],
+						"Destination": [
+						"LAX"
+						],
+						"DepartureDates": [
+						{
+							"Date": "2014-09-20"
+						}
+						]
+					}
+					],
+					"Preferences": {
+						"CheckAvailability": true
+						},
+						"Sellers": [
+						{
+							"Code": "Code01",
+							"SearchRule": [
+							{
+								"FareTye": "Published",
+								"Airline": "All"
+							}
+							]
+						}
+						]
+					}
+				}

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- Submit to xml.demo.vayant.com:7080
+-->
+
+<SearchRequest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ResponseType="xml" User="System">
+  <Itinerary xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <Passengers>
+      <Passenger PassengerID="1" PaxType="Adult"/>
+    </Passengers>
+    <Segments>
+      <FlightSegment seqNumber="1">
+        <PassengerReferences>
+          <PassengerReference ID="1" Cabin="All"/>
+        </PassengerReferences>
+        <Departure>
+          <Cities><City>JFK</City></Cities>
+          <Dates>
+            <DepartureDate>
+              <DateTime>
+                <Date>2014-08-25</Date>
+                <Time><Start>00:00:00</Start><End>23:59:00</End></Time>
+              </DateTime>
+            </DepartureDate>
+          </Dates>
+        </Departure>
+        <Arrival>
+          <Cities><City>IAD</City></Cities>
+          <ArrivalTime>
+            <Time><Start>00:00:00</Start><End>23:59:00</End></Time>
+          </ArrivalTime>
+        </Arrival>
+        <SegmentPreferences>
+          <Airlines>All</Airlines>
+          <Connections>0</Connections>
+        </SegmentPreferences>
+      </FlightSegment>
+      <FlightSegment seqNumber="2">
+        <PassengerReferences>
+          <PassengerReference ID="1" Cabin="All"/>
+        </PassengerReferences>
+        <Departure>
+          <Cities>
+            <City>IAD</City>
+          </Cities>
+          <Dates>
+            <DepartureDate>
+              <DateTime>
+                <Date>2014-08-28</Date>
+                <Time><Start>00:00:00</Start><End>23:59:00</End></Time>
+              </DateTime>
+            </DepartureDate>
+          </Dates>
+        </Departure>
+        <Arrival>
+          <Cities>
+            <City>LAX</City>
+          </Cities>
+          <ArrivalTime>
+            <Time>
+              <Start>00:00:00</Start>
+              <End>23:59:00</End>
+            </Time>
+          </ArrivalTime>
+        </Arrival>
+        <SegmentPreferences>
+          <Airlines>All</Airlines>
+          <Connections>0</Connections>
+        </SegmentPreferences>
+      </FlightSegment>
+    </Segments>
+    <Preferences>
+      <AllowSplitTickets>false</AllowSplitTickets>
+      <CheckAvailability>true</CheckAvailability>
+    </Preferences>
+    <Channels>
+      <Channel>
+        <ID>1</ID>
+        <Provider>Amadeus</Provider>
+        <PCC>PCC</PCC>
+      </Channel>
+    </Channels>
+    <Suppliers>
+      <Supplier>
+        <ID>1</ID>
+        <Name>Amadeus</Name>
+        <PointOfSale>US</PointOfSale>
+        <Rules>
+          <SearchRule>
+            <FareType>Published</FareType>
+            <Airline>All</Airline>
+            <ChannelID>1</ChannelID>
+          </SearchRule>
+        </Rules>
+      </Supplier>
+    </Suppliers>
+  </Itinerary>
+</SearchRequest>
